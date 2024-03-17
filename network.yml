@@ -16,9 +16,6 @@
         state: started
         enabled: yes
 
-    - name: Install
-      command: pip install docker-py
-
     - name: Pull httpd server image from Docker Hub
       docker_image:
         name: httpd
